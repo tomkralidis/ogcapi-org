@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OGC API - Publish/Subscribe Workflow - Overview</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/agency.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="../">
+            <!-- OGC API -->
+            <!-- <img src="img/OGC_Logo_2D_Blue_150px.png" alt=""> -->
+            <img class="page-top-logo" src="https://static.ogc.org/assets/ogc/ogc-logo-lockup-border-rev.svg" alt="OGC Logo">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#intro">Context</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#standards">APIs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#events">Sprints</a>
+                </li>
+<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="../#videos">Videos</a>
+        </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#training">Training</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#documents">Documents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#contact">Get In Touch</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<!--<header class="masthead coverages">-->
+<header class="masthead">
+<!--    <div class="ov-lay">-->
+<!--        <div class="container">-->
+<!--            <div class="intro-text">-->
+<!--                <div class="intro-lead-in">OGC API - Coverages - Overview</div>-->
+                <!-- <div class="intro-heading">#OGCAPI</div> -->
+                <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#intro">Tell Me More</a> -->
+<!--                <br>-->
+<!--                <p class="intro-lead-in"><a style="color:white;" href="http://twitter.com/hashtag/OGCAPI" target="_blank">#OGCAPI</a></p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+</header>
+
+<!-- Intro -->
+<section class="page-section" id="intro">
+    <div class="containter">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <!--          <h2 class="section-heading text-uppercase">OGC API - Common - Overview</h2>-->
+                <!-- <h3 class="section-subheading text-muted">A little about us</h3> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Begin CONTENT -->
+                <div id="content">
+
+                    <h1 id="ogc_api_coverages">OGC API - Publish/Subscribe Workflow</h1>
+
+                    <p><a href="https://ogcapi.ogc.org">OGC API Standards</a> define modular API building blocks to
+                        spatially enable Web APIs
+                        in a consistent way. <a href="http://openapis.org">OpenAPI</a> is used to define the
+                        reusable API building blocks with responses available in different representations,
+                        such as JSON and HTML, as well as more domain specific formats (e.g. GeoTIFF, CIS RDF, LAS, JPEG XL, netCDF, JPEG 2000 with GMLJP2, etc.).
+                    </p>
+
+                    <p>The OGC API family of standards is organized by resource type. OGC API -
+                        Coverages specifies the fundamental API building blocks for interacting with
+                        coverages. A coverage is a "function which returns values from its range for any direct position within its domain" (ISO 19123-1:2023).</p>
+
+                    <p>If you are unfamiliar with the term &#8216;coverage&#8217;, the explanations on
+                        the <a href="http://myogc.org/go/coveragesDWG">Coverages DWG Wiki</a> provide more detail and
+                        links to educational material.
+                        Additionally, <a href="https://www.w3.org/TR/sdw-bp/#coverages">Coverages: describing properties
+                            that vary with location (and time)</a> in the W3C/OGC Spatial Data on the Web Best Practice
+                        document may be considered.</p>
+
+                    <h2 id="overview_of_ogc_api_coverages_part_1_core">Overview of OGC API - Coverages - Part 1:
+                        Core</h2>
+
+                    <p>This <a href="https://github.com/opengeospatial/ogcapi-coverages">OGC API - Coverages</a>
+                        specification establishes how to access coverages. It integrates with the OGC API family of standards through <a
+                            href="https://github.com/opengeospatial/ogcapi-common">OGC API - Common</a> by:
+                    </p>
+                    <ul>
+                        <li>being accessible from an API landing page for a particular dataset,</li>
+                        <li>enabling the API to be described and documented using <a href="https://www.openapis.org/">OpenAPI</a> as per OGC API - Common - Part 1: Core,
+                        </li>
+                        <li>defining conformance classes specific to coverages,</li>
+                        <li>providing access to an OGC API <em>collection</em> of geospatial data (as defined in OGC API
+                            - Common - Part 2: Geospatial Data), as a coverage.
+                        </li>
+                    </ul>
+
+
+                    <h3 id="resources">Resources</h3>
+                  
+                    <h4>Defined in OGC API - Common - Part 1</h4>
+
+                    <p><code>{root}</code> The root of the API for the dataset.</p>
+                    
+                    <p><code>{root}/api</code> The API definition and documentation.</p>
+                    
+                    <p><code>{root}/conformance</code> The conformance declaration. </p>
+                    
+                    <h4>Extended from OGC API - Common - Part 2 with additional properties</h4>
+
+                    <p><code>{root}/collections</code></p>
+                    
+                    <p>The list of all collections available, some or all of which may be accessible using this Coverages API. Each of these collections contains a minimal subset of the object collection resource object described immediately below.</p>
+                    
+                    <p><code>{root}/collections/{collectionId}</code></p>
+                    
+                    <p>Description for the collection with the unique identifier {collectionId}, which may be accessible as a coverage. The resource includes elements such as an id, title, description, available crs and extent. This extent describes the domain of the coverage for each dimension, including the overall envelope, detailed sub-intervals where data is available, and/or a regular or irregular grid. This object also includes links to resources pertaining to this collection. </p>
+                    
+                    <h4>Defined in Coverages - Part 1</h4>
+
+                    <p><code>{root}/collections/{collectionId}/schema</code></p>
+                    
+                    <p>Returns the schema for the coverage fields or properties of values available at each direct position. At minimum, a JSON Schema representation of this resource is available. </p>
+                    
+                    <p><code>{root}/collections/{collectionId}/coverage</code></p>
+                    
+                    <p>Returns the coverage data, including any self-describing information (such as the domain set, range type and metadata components in addition to the range set). </p>
+                    
+                    <h4>Defined in Tiles - Part 1 (Coverage Tiles)</h4>
+
+                    <p><code>{root}/collections/{collectionId}/coverage/tiles</code></p>
+                    
+                    <p>Returns the list of tilesets available for this coverage.</p>
+                    
+                    <p><code>{root}/collections/{collectionId}/coverage/tiles/{tileSetId}</code></p>
+                    
+                    <p>Returns an individual coverage tileset for a particular 2D Tile Matrix Set</p>
+                    
+                    <p><code>{root}/collections/{collectionId}/coverage/tiles/{tileSetId}/{tileMatrix}/{tileRow}/{tileCol}</code></p>
+                    
+                    <p>Returns an individual coverage tile for a particular 2D Tile Matrix Set, tile matrix, tile row and tile column</p>
+                    
+                    <h4>Defined in Coverages - Part 1 "Scenes" requirements class</h4>
+
+                    <p><code>{root}/collections/{collectionId}/scenes</code></p>
+                    
+                    <p>Returns the list of scenes available for this coverage (for multi-scenes coverages, when the Scenes requirement class is supported)</p>
+                    
+                    <p><code>{root}/collections/{collectionId}/scenes/{sceneId}</code></p>
+                    
+                    <p>Returns the scene metadata for an individual scene</p>
+                    
+                    <p><code>{root}/collections/{collectionId}/scenes/{sceneId}/coverage</code></p>
+                    
+                    <p>Returns the coverage data for an individual scene</p>
+                    
+                    <h4>Examples</h4>
+
+                    <p><code>GET /collections/myCoverage/coverage</code>
+                    
+                    <p>Retrieve the whole coverage (the response may be downsampled if Scaling is supported by the server).
+                    
+                    <p><code>GET /collections/myCoverage/coverage?scale-factor=1</code>
+                    
+                    <p>Retrieve the whole coverage at native resolution (the server will likely return a 400 error for large datasets).
+                    
+                    <p><code>GET /collections/myCoverage/coverage?bbox=10,40,20,50</code>
+                    
+                    <p>Retrieve coverage spatial subsets between 40 and 50 degrees North, 10 and 20 degrees East, using the bbox query parameter.
+                    
+                    <p><code>GET /collections/myCoverage/coverage?bbox=160.6,-55.95,-170,-25.89</code>
+                    
+                    <p>Retrieve coverage spatial subsets using the bbox query parameter, crossing the antimeridian.
+                    
+                    <p><code>GET /collections/myCoverage/coverage?subset=Lat(40:50),Lon(10:20)</code>
+                    
+                    <p>Retrieve a coverage spatial subset using the subset query parameter.
+                    
+                    <p><code>GET /collections/myCoverage/coverage?properties=B02,B03,B04</code>
+                    
+                    <p>Retrieve bands B02, B03 and B04 (field selection a.k.a. "range subsetting").
+                    
+                    <p><code>GET /collections/myCoverage/coverage?scale-size=Lon(800),Lat(400)</code>
+                    
+                    <p>Retrieve a the coverage at a a resolution of 800 cells for the longitude axis and 400 cells for the latitude axis.
+                    
+                    <p><code>GET /collections/myCoverage/coverage?scale-factor=2</code>
+                    
+                    <p>Retrieve a the coverage at a downsampled (2x) resolution.
+                    
+                    <p><code>GET /collections/myCoverage/coverage?scale-axes=Lon(2)</code>
+                    
+                    <p>Retrieve a the coverage at a downsampled (2x) resolution for the longitude axis.
+
+
+                </div>
+                <!-- End CONTENT -->
+                <!-- <p class="text-center">To find out more about the OGC please <a href="https://www.ogc.org" target="_blank">visit our public site</a>. <br><img src="img/OGC_Logo_2D_Blue_150px.jpg" alt="OGC Logo"></p> -->
+                <p class="text-center">To find out more about the OGC please visit our public site. <a
+                        class="btn px-1" href="https://www.ogc.org" target="_blank" role="button"><img
+                        src="https://static.ogc.org/assets/ogc/ogc-logo-lockup-border.svg" alt="OGC Logo" height="76"></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; OGC <span id="year"></span></span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/opengeospatial" data-toggle="tooltip" data-placement="top"
+                           title="Visit the OGC Twitter page." alt="OGC Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <!-- <li class="list-inline-item">
+                      <a href="https://www.facebook.com/opengeospatial" data-toggle="tooltip" data-placement="top" title="Visit the OGC Facebook page." alt="OGC facebook">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li> -->
+                    <li class="list-inline-item">
+                        <a href="http://www.linkedin.com/groups?mostPopular=&gid=55322" data-toggle="tooltip"
+                           data-placement="top" title="Visit the OGC Linkedin group." alt="OGC linkedin group">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.opengeospatial.org" data-toggle="tooltip" data-placement="top"
+                           title="Visit the OGC website." alt="OGC website">
+                            <i class="fa fa-home"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li class="list-inline-item">
+                        <a href="https://www.opengeospatial.org/ogc/policies/privacy">Privacy Policy</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    	$("#year").text( (new Date).getFullYear() );
+	})
+</script>
+<!-- Plugin JavaScript -->
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<script src="../js/jqBootstrapValidation.js"></script>
+<script src="../js/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="../js/agency.min.js"></script>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCQMLFG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NCQMLFG');</script>
+  <!-- End Google Tag Manager -->
+  <link type="text/css" rel="stylesheet" href="../css/cookiepanel.css" />
+  
+  <div id='cookiePanel'>
+    <p>Do you consent to the use of cookies on this site?</p>
+    <button id="btnConsentGranted" class="btnConsent">Yes</button>
+    <button id="btnConsentDenied" class="btnConsent">No</button>
+    <a id="detailToggle" href="#detailPanel" rel="modal:open">Set Specific Preferences</a>
+    <!-- The Modal -->
+    <div id="detailPanel" class="modal">
+      <p>Required Cookies (minimal set for site operation)<br/>
+        <label class="switch">
+          <input type="checkbox" checked disabled>
+          <span class="slider round"></span>
+        </label>
+      </p>
+      <p>Google Analytics<br/>
+        <label class="switch">
+          <input id="opt_analytics_storage" type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </p>
+      <hr/>
+      <p>Make selection then click "Yes" above.</p>
+      <!-- <a href="#" rel="modal:close">Close</a> -->
+    </div>
+  </div>
+  <script type="text/javascript" src="../js/cookiepanel.js"></script>
+</body>
+</html>
